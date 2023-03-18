@@ -9,3 +9,7 @@ It's sounds weird how this problem is being approached here, but I think in a mo
 In order to have the minimum possible loops, we try to think in a way to represent the limit-sized array of live-or-died people as a sequence of bits, where each one represents if a person is alive or not. And them we will use the bitwise operators to do the job.
 
 Just make an AND comparison between the sequence of bits and the sequence of bits representing all the people alive. The result will be the sequence of bits representing the people who died. And then, to get the position of them, we decide to use a hash table to store the possible results as the key, and the value will be and entire array containing the positions of the people who died. This way, we can avoid the loop to get the position of the people who died.
+
+# Credits
+
+I would like to thank my friend [Luciano Aparecido Gonçalves](https://www.linkedin.com/in/lucianoag) for the idea of this problem and for the help in the implementation.
